@@ -6,5 +6,6 @@ rm ./CPP-Project-Template/setup.bash
 cd ./CPP-Project-Template
 rm -rf .git
 
-mv ./C++-Project-Template/* ./
+mv "./C++ Project Template/"* ./  
+rm -rf "./C++ Project Template/"
 cd ..
