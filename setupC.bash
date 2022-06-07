@@ -8,7 +8,7 @@ cd ./CPP-Project-Template
 rm -rf .git
 
 mv "./C++ Project TemplateC/"* ./  
-mv "./C++ Project TemplateC/".* ./  
+mv "./C++ Project TemplateC/".* ./ > /dev/null 2>&1
 rm -rf "./C++ Project TemplateC/"
 rm -rf "./C++ Project TemplateCPP/"
 cd ..
