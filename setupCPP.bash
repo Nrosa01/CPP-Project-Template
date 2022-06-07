@@ -8,4 +8,5 @@ rm -rf .git
 
 mv "./C++ Project TemplateCPP/"* ./  
 rm -rf "./C++ Project TemplateCPP/"
+rm -rf "./C++ Project TemplateC/"
 cd ..
