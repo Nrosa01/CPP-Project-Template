@@ -8,4 +8,4 @@ rm -rf .git
 cd ..
 
 mv ./CPP-Project-Template/* ./
-
+rm -rf ./CPP-Project-Template
