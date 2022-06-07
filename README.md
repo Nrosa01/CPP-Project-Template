@@ -12,7 +12,7 @@
 1. Run this in the folder you want to create the template.
 
 ```sh
-curl "https://raw.githubusercontent.com/Nrosa01/CPP-Project-Template/main/setup.sh" | bash
+curl "https://raw.githubusercontent.com/Nrosa01/CPP-Project-Template/main/setup.bash | bash
 ```
 
 2. [Optional] Change APPNAME in executeOnlyBash, buildAndExecuteBash, in the Makefile and in .vscode/launch.json
