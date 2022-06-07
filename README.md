@@ -1,9 +1,11 @@
 # C++ Project Template
 
+This is a repo that allows you to quickly create a C++/C template compatible with vscode and setted up for debbuging.
+
 # Prerequisites
 
  - make
- - g++
+ - g++/gcc
  - git
  - (optional) gdb
 
@@ -11,8 +13,16 @@
 
 1. Run this in the folder you want to create the template.
 
+#### For C++ Template
+
 ```sh
-curl "https://raw.githubusercontent.com/Nrosa01/CPP-Project-Template/main/setup.bash" | bash
+curl "https://raw.githubusercontent.com/Nrosa01/CPP-Project-Template/main/setupCPP.bash" | bash
+```
+
+#### For C Template
+
+```sh
+curl "https://raw.githubusercontent.com/Nrosa01/CPP-Project-Template/main/setupC.bash" | bash
 ```
 
 2. [Optional] Change APPNAME in executeOnlyBash, buildAndExecuteBash, in the Makefile and in .vscode/launch.json
@@ -35,11 +45,15 @@ bash executeOnlyBash.bash arg1 arg2...    (runs debug)
 
 # Known problems
 
-Currently changes in header files aren't detected in the makefile. So if you have a file.h that's already compiled in file.o and you change file.h, when you run make it won't rebuild file.o.
+Currently changes in header files aren't detected in the makefile for C++ Template. So if you have a file.h that's already compiled in file.o and you change file.h, when you run make it won't rebuild file.o.
 
 This problem doesn't affect .cpp files. If you have a class in file.h file.cpp and you have already compiled a previous version in file.o, if you change file.cpp it will rebuild file.o.
 
 # FAQ
+
+- Can I change compiler link flags?
+    
+    Yes, you can found them in the Makefile
 
 - Can I change the compiler?
     
